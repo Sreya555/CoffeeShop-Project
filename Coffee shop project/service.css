@@ -1,0 +1,145 @@
+/* service.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Transparent black */
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 60px;
+    margin-left: 20px;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.7WSd9Li8fee_txWnccg3mwHaEo&pid=Api&P=0&h=220);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.content-container {
+    position: relative;
+    top: 20vh;
+    color: white;
+    text-align: left;
+}
+
+.premium-coffee-text {
+    font-size: 43px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.coffee-info {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D2691E;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.order-now {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.order-btn {
+    background: linear-gradient(45deg, #D2691E, #A0522D);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(210, 105, 30, 0.4);
+}
+
+.order-btn:hover {
+    background: linear-gradient(45deg, #A0522D, #8B4513);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(139, 69, 19, 0.6);
+}
+
+.book-btn {
+    background: transparent;
+    color: #D2691E;
+    border: 2px solid #D2691E;
+}
+
+.book-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #D2691E, #A0522D);
+    transition: left 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.book-btn:hover::before {
+    left: 0;
+}
+
+.book-btn:hover {
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(139, 69, 19, 0.6);
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+    .premium-coffee-text {
+        font-size: 30px;
+    }
+    .coffee-info, .order-now, .btn{
+        font-size:18px;
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        display: none;
+    }
+}

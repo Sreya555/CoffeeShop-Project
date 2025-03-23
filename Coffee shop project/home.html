@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    
+    <style>
+        /* Remove underline from links */
+        .contact-us-btn, .book-table-btn {
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Adding an image -->
+    <img class="background-image" src="https://wallpaperaccess.com/full/2632608.jpg" alt="Background">
+
+    <!-- Content over the background -->
+    <header class="d-flex align-items-center justify-content-between px-4">
+        <!-- Shop name on the left -->
+        <div class="shop-name">Coffee Shop</div>
+        <nav class="center-nav d-flex">
+            <a href="contact.html" class="contact-us-btn">Connect Us</a>
+        </nav>
+        <a href="booktable.html" class="book-table-btn">Book Table</a>
+    </header>
+    
+    <!-- Text in the body -->
+    <div class="premium-coffee-text">A Premium and Authentic<br> Coffee House</div>
+    
+    <!-- Make Reservation Button -->
+    <a href="reservation.html" class="reservation-btn" id="reservationBtn">Make Reservation</a>
+
+    <!-- Bootstrap JS & Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Page Loaded Successfully");
+            
+            // Add event listener for Make Reservation button
+            document.getElementById("reservationBtn").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                alert("Reservation button clicked! Redirecting to reservation page...");
+                window.location.href = "reservation.html";
+            });
+        });
+    </script>
+</body>
+</html>
+

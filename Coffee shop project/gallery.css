@@ -1,0 +1,103 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    background: none;
+}
+
+/* Transparent Header */
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 0 20px; /* Adjusted padding */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-brand {
+    color: goldenrod;
+    font-size: 28px; /* Shop Name font size */
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Shop Name */
+.shop-name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Logo */
+.logo {
+    height: 80px;
+    padding-right: 50px;
+}
+
+/* Full Background Image */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.4X6v5shwK32VIZ0OAJMzoAHaEo&pid=Api&P=0&h=220); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Gallery Section */
+.gallery-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 150px 20px 50px;
+    z-index: 1;
+}
+
+.gallery-section h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+    margin-top: 30px;
+}
+
+.gallery-section p {
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    color: white;
+    font-family: initial;
+}
+
+/* Dish Gallery */
+.dish-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dish-gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dish-gallery img:hover {
+    transform: scale(1.1);
+}

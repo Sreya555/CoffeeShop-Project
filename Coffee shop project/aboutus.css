@@ -1,0 +1,148 @@
+/* aboutus.css */
+
+body {
+    background-color: #2A1A1F;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #F4F1F1;
+}
+
+.about-us {
+    color: #F4F1F1;
+    padding: 40px 0; /* Adjusted padding */
+    text-align: center;
+    background: linear-gradient(45deg, rgba(32, 20, 26, 0.8), rgba(50, 28, 36, 0.7));
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.header-logo img {
+    max-width: 120px;
+    border-radius: 50%;
+}
+
+.header-text h1, .header-text p {
+    text-align: center;
+}
+
+.header-text {
+    max-width: 700px;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #E3B577;
+    margin-bottom: 10px;
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    color: #C1A09C;
+}
+
+.about-content .col-md-4 {
+    background-color: rgba(75, 60, 58, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-content .col-md-4:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #E3B577;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #F4F1F1;
+}
+
+.team {
+    background-color: #3A2E33;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    color: #E3B577;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #F4F1F1;
+}
+
+.testimonials {
+    background-color: #4F3C41;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+    color: #E3B577;
+}
+
+.testimonial {
+    background-color: #6E4F47;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    color: #F4F1F1;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
